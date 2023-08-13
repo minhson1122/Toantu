@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển độ C sang độ F</title>
+</head>
+<body>
+<input type="text" id="do">
+<button onclick="doisangdof()">Đổi</button>
+<p id="kq"></p>
+<script>
+    // inputdoc =prompt("nhap do c")
+    // inputdieukiena = 1.8
+    // inputdieukienb = 32
+    // let doc=parseInt(inputdoc)
+    // let chuyendoi= (inputdieukiena*doc+inputdieukienb)
+    // document.write(chuyendoi)
+    function doisangdof(){
+        let a = document.getElementById('do').value;
+        let doF = a /5 * 9 +32;
+        document.getElementById('kq').innerHTML = doF
+    }
+
+</script>
+</body>
+</html>

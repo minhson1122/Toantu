@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính</title>
+</head>
+<h2>Cacurlato</h2>
+<body>
+<input type="number" id="number1">
+<input type="number" id="number2">
+<br>
+<button onclick="cong()">+</button>
+<button onclick="tru()">-</button>
+<button onclick="nhan()">*</button>
+<button onclick="chia()">/</button>
+<p id="kq"></p>
+<script>
+    function cong() {
+        let a = +document.getElementById("number1").value;
+        let b = +document.getElementById("number2").value;
+        let tong = a + b;
+        document.getElementById('kq').innerHTML = 'a = ' + tong
+    }
+
+    function tru() {
+        let a = +document.getElementById("number1").value;
+        let b = +document.getElementById("number2").value;
+        let hieu = a - b;
+        document.getElementById('kq').innerHTML = 'b = ' + hieu
+    }
+    function nhan() {
+        let a = +document.getElementById("number1").value;
+        let b = +document.getElementById("number2").value;
+        let tich = a * b;
+        document.getElementById('kq').innerHTML = 'b = ' + tich
+    }
+    function chia() {
+        let a = +document.getElementById("number1").value;
+        let b = +document.getElementById("number2").value;
+        let thuong = a / b;
+        document.getElementById('kq').innerHTML = 'b = ' + thuong
+    }
+</script>
+</body>
+</html>
